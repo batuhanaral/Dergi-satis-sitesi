@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+button:focus
+{
+    outline: 0;
+}
+.main
+{
+    width: 100%;
+    height: 100%;
+}
+.header
+{
+   
+    padding-bottom: 150px;
+    width: 1903px;
+    height: auto;
+}
+
+.header .navbar
+{ 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 1910px;
+    height: auto;
+    
+}
+.header .navbar .container
+{
+    
+    display: flex;
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+}
+.container .logo 
+{
+    display: flex;
+    width: 20%;
+    height: 70px;
+}
+.container .logo img
+{
+    margin-left: 5%;
+}
+.container .logo .baslik
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.container .logo .baslik h1
+{
+    color: white;
+}
+.container .menu
+{
+   width: 80%;
+   height: 70px;
+
+}
+.container .menu li
+{
+    float: left;
+}
+.container .menu li a
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin: 25px 30px;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+    
+}
+.container .menu li:hover a
+{
+    color: #ff9424;
+}
+.header .login
+{
+    width: 20%;
+    height: 70px;
+    padding: 15px 7%;
+}
+#footer-girisButon {
+    width: 100px;
+    height: 40px ;
+    border-radius: 15px;
+    background-color: #ff9424;
+    
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+#footer-girisButon:hover {
+    cursor: pointer;
+    background-color: #c76f11; 
+    transition: all 0.4s ease-out;
+  }
+.duyuruYazisi
+{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 1900px;
+    height: 50px;
+}
+.duyuruYazisi marquee
+{
+    font-size: 50px;
+}
+
+.urunlerAlani
+{
+    width: 100%;
+    height: 2350px;
+}
+.urunlerAlani .baslik2
+{
+    margin: 10px auto;
+    width: 30%;
+    height: 70px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+.urunlerAlani .bolum
+{
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+}
+.urunlerAlani .bolum .urun
+{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.2);
+
+    height: 90%;
+    width: 20%;
+    margin:10px auto;
+    text-align: center;
+}
+.urun .gorsel
+{
+    width: 80%;
+    height: 65%;
+    background-color: turquoise;
+    margin:10px auto;
+}
+.urun .text
+{
+    width: 80%;
+    height: 20%;
+    background-color: white;
+    margin:10% auto;
+}
+.footer
+{
+    bottom: 0px;
+    width: 1903px;
+    height: 450px;
+    background-color: #ff9424;
+    padding-top: 3%;
+    margin: 0 auto;
+    
+}
+.footer .bolum
+{
+    width: 1000px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+}
+.footer .bolum .bilgi
+{
+    width: 30%;
+    height: 100%;
+
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.4);
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.bolum .bilgi .bilgiBaslik
+{
+    margin-top: 5%;
+    width: 100%;
+    height: 15%;
+}
+.bolum .bilgi .bilgiBaslik h2
+{
+    padding-top: 5%;
+}
+.footer .bolum .bilgi .footerMenu
+{
+    margin-top: 3%;
+    margin-left: 15px;
+    width: 90%;
+    height: 65%;
+}
+.footerMenu ul
+{
+    margin-top: 20px;
+
+}
+.footerMenu ul li
+{
+    margin: 5px 0;
+}
+.footerMenu ul li a
+{
+    
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.bilgiBaslik h2
+{
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+.footerMenu2
+{
+    padding-top: 20px;
+}
+.footerMenu .sosyalMedyalar
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+
+}
+.sosyalMedyalar .footerSemboller
+{
+    margin: 0 auto;
+    height: 32px;
+    width: 32px;
+}
+
+/* gorsel ekleme */
+.bolum .gorsel img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+gallerySlider = slide
+gallerySliderItem = slideGorseller
+*/
+/*
+.sliderMain
+{
+    width: 100%;
+    height: auto;
+    background-color: black;
+
+}*/
+.slide
+{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.slideGorseller
+{
+    width: 300%;
+    left: 0;
+    position: relative;
+    animation: slideAnimation 30s infinite;
+}
+.slideGorseller img
+{
+    width: 33.33%;
+    float: left;
+    height: 700px;
+}
+
+@keyframes slideAnimation {
+    0% { left: 0; }
+    25% { left: -100%; }
+    50% { left: -200%; }
+    75% { left: -100%; }
+    100% { left: 0; }
+}
+/* -------- AÇILIR MENÜ ---------*/
+
+.ustMenu
+{
+    position: relative;
+    display: inline-block;
+}
+.acilir-menu
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    z-index: 1;
+}
+.acilir-menu a:hover
+{
+    border-bottom: 1px solid black;
+}
+.ustMenu:hover .acilir-menu
+{
+    display: block;
+}
+.ustMenu:hover .link
+{
+    background-color: transparent;
+}
+.acilir-menu2
+{
+    min-width: 300px;
+}
+
+/* BİRİMLER CSS*/
+
+.header2
+{
+    padding-bottom: 3.5%;
+}
+.birimlerAlani
+{
+    width: 100%;
+    height: 2600px;
+}
+.birimlerBaslik
+{
+    margin-top: 80px;
+    padding-top: 15px;
+    text-align: center;
+    height: 80px;
+}
+
+.birimlerAlani .birimAlanlari
+{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+}
+.birimAlanlari .alan
+{
+    border: 1px solid black;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.2);
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+}
+.cizgi
+{
+    margin-top: 65px;
+    width: 2px;
+    height: 80%;
+    background-color: black;
+}
+.birimAlanlari .resim
+{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    margin:0 auto;
+    margin-top: 20px;
+    border-radius: 10rem;
+}
+.birimAlanlari .birimBilgi
+{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.birimlerAlani .birimAlanlari2
+{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+}
+.birimAlanlari2 .alan
+{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.2);
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.birimAlanlari2 .resim
+{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    margin:0 auto;
+    margin-top: 20px;
+    border-radius: 10rem;
+}
+.birimAlanlari2 .birimBilgi
+{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.birimAlanlari .resim img
+{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10rem;
+}
+.birimAlanlari2 .resim img
+{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10rem;
+}
+
+.birimBilgi ul li
+{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.birimBilgi .sosyalMedya
+{
+    justify-content: space-around;
+    display: flex;
+}
+.sosyalMedya img
+{
+    width: 24px;
+    height: 24px;
+}
+
+
+/* VİZYON - MİSYON CSS */
+
+.VMAlani
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 900px;
+    padding-top: 75px;
+
+}
+.VMAlani .VM
+{
+    width: 1480px;
+    height: 680px;
+    margin: 0 auto;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.7);
+    
+}
+.VMAlani .VMBasliklar
+{
+    
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.VMAlani .VMBasliklar .vizyonBaslik
+{
+    
+    font-size: 20px;
+    width: 600px;
+    height: 40px;
+    margin-right: 80px;
+    
+}
+.VMAlani .VMBasliklar .misyonBaslik
+{
+
+    font-size: 20px;
+    width: 600px;
+    height: 40px;
+}
+.VMAlani .vizyonmisyon
+{
+    margin-top: 20px;
+    width: 1480px;
+    height: 600px;
+    display: flex;
+    padding-left: 150px;
+}
+.VMAlani .vizyon
+{
+    width: 40%;
+    height: 100%;
+
+    margin-right: 50px;
+
+}
+.VMAlani .misyon
+{
+    width: 40%;
+    height: 100%;
+
+    margin-left: 50px;
+
+
+}
+
+.VMAlani p
+{
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 20px;
+}
+
+
+/* HAKKIMIZDA CSS*/
+
+.hakkimizdaAlani
+{
+    width: 100%;
+    height: 1000px;
+}
+.hakkimizdaAlani2
+{
+    width: 100%;
+    height: 100%;
+
+}
+.hakkimizdaGorsel
+{
+    width: 1000px;
+    height: 1000px;
+    margin:0 auto;
+}
+.hakkimizdaGorsel img
+{
+    width: 1000px;
+    height: 900px;
+    opacity: 0.2;
+    display:inline-block;
+}
+.hakkimizdaAlani p
+{
+    position:absolute;
+}
+.hakkimizdaAlani .hakkimizdaBaslik
+{
+    top: 31%;
+    left: 44%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.hakkimizdaAlani .hakkimizdaText
+{
+    top:40%;
+    left: 37%;
+    width: 600px;
+    font-size: 25px;
+
+}
+
+/* İLETİŞİM CSS */
+
+.iletisimAlani
+{
+    width: 100%;
+    height: 870px;
+}
+.iletisimAlani .iletisimBolum
+{
+    width: 1480px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+}
+.iletisimBolum .iletisimAlanlari
+{
+    width: 670px;
+    height: 700px;
+    margin: 0 auto;
+}
+.iletisimAlanlari .harita
+{
+    width: 800px;
+    height: 480px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.iletisimAlanlari .iletisimBilgiAlani
+{
+    width: 400px;
+    height: 480px;
+    box-shadow: 10px 10px #888888,-10px -10px #888888;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 40px;
+
+}
+.iletisimBilgiAlani h1
+{
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+.iletisimBilgiAlani ul
+{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.iletisimBilgiAlani ul li
+{
+    margin-top: 5px;
+}
+
+.formAlani
+{
+    width: 100%;
+    height: 500px;
+
+}
+.formAlaniIc
+{
+    width: 670px;
+    height: 450px;
+    border: 1px solid black;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+.formAlaniIcinIci
+{   margin-left: 55px;
+    width: 500px;
+    height: 450px;
+}
+.formAlani ul li input
+{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+}
+.formAlani ul li
+{
+    margin-top: 10px;
+    
+}
+
+
+/* Ürünler BOX SHADOW*/
+.urunlerAlani .bolum .urun:hover
+{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.7);
+}
+
+/* Birimler BOX SHADOW*/
+.birimAlanlari .alan:hover
+{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.7);
+}
+.birimAlanlari2 .alan:hover
+{
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.7);
+}
+
+/* DUYURULAR CSS */
+.duyuruAlani
+{
+    width: 1900px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.duyuruAlani .bolum
+{
+    width: 1750px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+
+}
+.duyuruAlani .duyuru
+{
+    width: 450px;
+    height: 600px;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.2);
+    margin: 0 auto;
+
+}
+.duyuru .duyuruResim
+{
+    border: 1px solid black;
+    width: 430px;
+    height: 350px;
+    background-color: blue;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.duyuru .duyuruText
+{
+    width: 380px;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.duyuruText p
+{
+    font-size: 20px;
+}
+.duyuruText a
+{
+    text-decoration: underline;
+    color: #ff9424;
+}
+.cizgiYatay
+{
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+}
